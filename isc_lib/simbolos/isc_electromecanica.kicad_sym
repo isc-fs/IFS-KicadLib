@@ -1,0 +1,739 @@
+(kicad_symbol_lib
+	(version 20231120)
+	(generator "kicad_symbol_editor")
+	(generator_version "8.0")
+	(symbol "3568"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FUSE"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "3568"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "3568"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse Holder 30A 500V 1 Circuit Blade Through Hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "7.5"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "534-3568"
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/3568?qs=fP5bVVCrK%2Fd7nbA%2FPpwnKw%3D%3D"
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Keystone Electronics"
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "3568"
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "3568_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	(symbol "1571563-6" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+	    (property "Reference" "SW" (id 0) (at 20.32 10.16 0)
+	      (effects (font (size 1.524 1.524)))
+	    )
+	    (property "Value" "1571563-6" (id 1) (at 20.32 7.62 0)
+	      (effects (font (size 1.524 1.524)))
+	    )
+	    (property "Footprint" "SW4_1437565-E_TEC" (id 2) (at 0 0 0)
+	      (effects (font (size 1.27 1.27) italic) hide)
+	    )
+	    (property "Datasheet" "1571563-6" (id 3) (at 0 0 0)
+	      (effects (font (size 1.27 1.27) italic) hide)
+	    )
+	    (property "ki_keywords" "1571563-6" (id 4) (at 0 0 0)
+	      (effects (font (size 1.27 1.27)) hide)
+	    )
+	    (property "ki_locked" "" (id 5) (at 0 0 0)
+	      (effects (font (size 1.27 1.27)) hide)
+	    )
+	    (property "ki_fp_filters" "SW4_1437565-E_TEC" (id 6) (at 0 0 0)
+	      (effects (font (size 1.27 1.27)) hide)
+	    )
+	    (symbol "1571563-6_0_1"
+	      (polyline
+	        (pts
+	          (xy 7.62 5.08)
+	          (xy 7.62 -10.16)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 7.62 -10.16)
+	          (xy 33.02 -10.16)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 33.02 -10.16)
+	          (xy 33.02 5.08)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 33.02 5.08)
+	          (xy 7.62 5.08)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 7.62 0)
+	          (xy 15.24 0)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 7.62 -5.08)
+	          (xy 15.24 -5.08)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 15.24 0)
+	          (xy 15.24 -5.08)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 15.24 -2.54)
+	          (xy 16.51 -2.54)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 25.4 0)
+	          (xy 33.02 0)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 25.4 0)
+	          (xy 25.4 -5.08)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 25.4 -5.08)
+	          (xy 33.02 -5.08)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 24.13 -2.54)
+	          (xy 25.4 -2.54)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (circle (center 17.145 -2.54) (radius 0.635)
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (circle (center 23.495 -2.54) (radius 0.635)
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 17.78 -2.54)
+	          (xy 22.86 -1.27)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (pin unspecified line (at 0 0 0) (length 7.62)
+	        (name "1" (effects (font (size 1.27 1.27))))
+	        (number "1" (effects (font (size 1.27 1.27))))
+	      )
+	      (pin unspecified line (at 0 -5.08 0) (length 7.62)
+	        (name "2" (effects (font (size 1.27 1.27))))
+	        (number "2" (effects (font (size 1.27 1.27))))
+	      )
+	      (pin unspecified line (at 40.64 0 180) (length 7.62)
+	        (name "3" (effects (font (size 1.27 1.27))))
+	        (number "3" (effects (font (size 1.27 1.27))))
+	      )
+	      (pin unspecified line (at 40.64 -5.08 180) (length 7.62)
+	        (name "4" (effects (font (size 1.27 1.27))))
+	        (number "4" (effects (font (size 1.27 1.27))))
+	      )
+	    )
+	  )
+	(symbol "ACSC02-41CGKWA-F01" (in_bom yes) (on_board yes)
+	    (property "Reference" "DS" (at 31.75 7.62 0)
+	      (effects (font (size 1.27 1.27)) (justify left top))
+	    )
+	    (property "Value" "ACSC02-41CGKWA-F01" (at 31.75 5.08 0)
+	      (effects (font (size 1.27 1.27)) (justify left top))
+	    )
+	    (property "Footprint" "ACSC0241CGKWAF01" (at 31.75 -94.92 0)
+	      (effects (font (size 1.27 1.27)) (justify left top) hide)
+	    )
+	    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/ACSC02-41CGKWA-F01.pdf" (at 31.75 -194.92 0)
+	      (effects (font (size 1.27 1.27)) (justify left top) hide)
+	    )
+	    (property "ki_description" "LED Displays & Accessories Single Green 570nm Common Cathode" (at 31.75 -294.92 0)
+	      (effects (font (size 1.27 1.27)) (justify left top) hide)
+	    )
+	    (property "Height" "3.25" (at 31.75 -394.92 0)
+	      (effects (font (size 1.27 1.27)) (justify left top) hide)
+	    )
+	    (property "Mouser Part Number" "604-ACSC02-41CGKWA" (at 31.75 -494.92 0)
+	      (effects (font (size 1.27 1.27)) (justify left top) hide)
+	    )
+	    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kingbright/ACSC02-41CGKWA-F01?qs=f499HRGa1RmXfcmxlPLbDg%3D%3D" (at 31.75 -594.92 0)
+	      (effects (font (size 1.27 1.27)) (justify left top) hide)
+	    )
+	    (property "Manufacturer_Name" "Kingbright" (at 31.75 -694.92 0)
+	      (effects (font (size 1.27 1.27)) (justify left top) hide)
+	    )
+	    (property "Manufacturer_Part_Number" "ACSC02-41CGKWA-F01" (at 31.75 -794.92 0)
+	      (effects (font (size 1.27 1.27)) (justify left top) hide)
+	    )
+	    (rectangle
+	      (start 5.08 2.54)
+	      (end 30.48 -12.7)
+	      (stroke (width 0.254) (type default))
+	      (fill (type background))
+	    )
+	    (pin passive line (at 0 0 0) (length 5.08)
+	      (name "A_E" (effects (font (size 1.27 1.27))))
+	      (number "1" (effects (font (size 1.27 1.27))))
+	    )
+	    (pin passive line (at 0 -2.54 0) (length 5.08)
+	      (name "A_D" (effects (font (size 1.27 1.27))))
+	      (number "2" (effects (font (size 1.27 1.27))))
+	    )
+	    (pin passive line (at 0 -5.08 0) (length 5.08)
+	      (name "COM_K_1" (effects (font (size 1.27 1.27))))
+	      (number "3" (effects (font (size 1.27 1.27))))
+	    )
+	    (pin passive line (at 0 -7.62 0) (length 5.08)
+	      (name "A_C" (effects (font (size 1.27 1.27))))
+	      (number "4" (effects (font (size 1.27 1.27))))
+	    )
+	    (pin passive line (at 0 -10.16 0) (length 5.08)
+	      (name "A_DP" (effects (font (size 1.27 1.27))))
+	      (number "5" (effects (font (size 1.27 1.27))))
+	    )
+	    (pin passive line (at 35.56 -10.16 180) (length 5.08)
+	      (name "A_B" (effects (font (size 1.27 1.27))))
+	      (number "6" (effects (font (size 1.27 1.27))))
+	    )
+	    (pin passive line (at 35.56 -7.62 180) (length 5.08)
+	      (name "A_A" (effects (font (size 1.27 1.27))))
+	      (number "7" (effects (font (size 1.27 1.27))))
+	    )
+	    (pin passive line (at 35.56 -5.08 180) (length 5.08)
+	      (name "COM_K_2" (effects (font (size 1.27 1.27))))
+	      (number "8" (effects (font (size 1.27 1.27))))
+	    )
+	    (pin passive line (at 35.56 -2.54 180) (length 5.08)
+	      (name "A_F" (effects (font (size 1.27 1.27))))
+	      (number "9" (effects (font (size 1.27 1.27))))
+	    )
+	    (pin passive line (at 35.56 0 180) (length 5.08)
+	      (name "A_G" (effects (font (size 1.27 1.27))))
+	      (number "10" (effects (font (size 1.27 1.27))))
+	    )
+	  )
+	(symbol "CL6K4-G"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -0.508 5.334 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CL6K4-G_1_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 3.81 -3.81)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -5.08 -2.54 180)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 2.54 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 3.81 0 0)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	(symbol "150080RS75000" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+	    (property "Reference" "U" (id 0) (at 20.32 10.16 0)
+	      (effects (font (size 1.524 1.524)))
+	    )
+	    (property "Value" "150080RS75000" (id 1) (at 20.32 7.62 0)
+	      (effects (font (size 1.524 1.524)))
+	    )
+	    (property "Footprint" "150080RS75000_WRE" (id 2) (at 0 0 0)
+	      (effects (font (size 1.27 1.27) italic) hide)
+	    )
+	    (property "Datasheet" "https://www.we-online.com/catalog/datasheet/150080RS75000.pdf" (id 3) (at 0 0 0)
+	      (effects (font (size 1.27 1.27) italic) hide)
+	    )
+	    (property "ki_keywords" "150080RS75000" (id 4) (at 0 0 0)
+	      (effects (font (size 1.27 1.27)) hide)
+	    )
+	    (property "ki_locked" "" (id 5) (at 0 0 0)
+	      (effects (font (size 1.27 1.27)) hide)
+	    )
+	    (property "ki_fp_filters" "150080RS75000_WRE" (id 6) (at 0 0 0)
+	      (effects (font (size 1.27 1.27)) hide)
+	    )
+	    (symbol "150080RS75000_0_1"
+	      (polyline
+	        (pts
+	          (xy 7.62 5.08)
+	          (xy 7.62 -5.08)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 7.62 -5.08)
+	          (xy 33.02 -5.08)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 33.02 -5.08)
+	          (xy 33.02 5.08)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 33.02 5.08)
+	          (xy 7.62 5.08)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 7.62 0)
+	          (xy 33.02 0)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 17.78 0)
+	          (xy 22.86 2.54)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 22.86 2.54)
+	          (xy 22.86 -2.54)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 22.86 -2.54)
+	          (xy 17.78 0)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 17.78 2.54)
+	          (xy 17.78 -2.54)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 20.32 1.905)
+	          (xy 19.05 3.175)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 20.955 2.54)
+	          (xy 19.685 3.81)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 19.05 3.175)
+	          (xy 19.3675 2.54)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 19.3675 2.54)
+	          (xy 19.685 2.8575)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 19.685 2.8575)
+	          (xy 19.05 3.175)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 19.685 3.81)
+	          (xy 20.0025 3.175)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 20.0025 3.175)
+	          (xy 20.32 3.4925)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 20.32 3.4925)
+	          (xy 19.685 3.81)
+	        )
+	        (stroke (width 0.127) (type default) (color 0 0 0 0))
+	        (fill (type none))
+	      )
+	      (polyline
+	        (pts
+	          (xy 20.0025 3.175)
+	          (xy 20.32 3.4925)
+	          (xy 19.685 3.81)
+	        )
+	        (stroke (width 0) (type default) (color 0 0 0 0))
+	        (fill (type outline))
+	      )
+	      (polyline
+	        (pts
+	          (xy 19.3675 2.54)
+	          (xy 19.685 2.8575)
+	          (xy 19.05 3.175)
+	        )
+	        (stroke (width 0) (type default) (color 0 0 0 0))
+	        (fill (type outline))
+	      )
+	      (pin unspecified line (at 0 0 0) (length 7.62)
+	        (name "1" (effects (font (size 1.27 1.27))))
+	        (number "1" (effects (font (size 1.27 1.27))))
+	      )
+	      (pin unspecified line (at 40.64 0 180) (length 7.62)
+	        (name "2" (effects (font (size 1.27 1.27))))
+	        (number "2" (effects (font (size 1.27 1.27))))
+	      )
+	    )
+	  )
+)

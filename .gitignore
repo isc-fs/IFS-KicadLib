@@ -1,0 +1,43 @@
+# KiCad backup files
+*-backups/
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.bak
+
+# KiCad project auto-save
+*.kicad_prl
+*_autosave-*
+
+# KiCad production outputs (no versionar gerbers aquí, van en los proyectos)
+production/
+gerbers/
+*.gbr
+*.drl
+*.gtp
+*.gtl
+*.gbl
+*.gbs
+*.gbp
+*.gto
+*.gts
+*.gko
+
+# KiCad BOM exports
+*.csv
+*.xml
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log

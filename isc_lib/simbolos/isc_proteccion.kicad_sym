@@ -1,4 +1,4 @@
-﻿(kicad_symbol_lib
+(kicad_symbol_lib
 	(version 20211014)
 	(generator "kicad_symbol_editor")
 	(symbol "GF1A-E3_67A" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)

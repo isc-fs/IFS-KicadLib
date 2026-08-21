@@ -4022,11 +4022,17 @@
 			)
 			(text "Arduino Nano"
 				(at 0 19.8 0)
-				(effects (font (size 1 1) (style bold)) (justify left))
+				(effects
+					(font (size 1 1) (bold yes))
+					(justify left)
+				)
 			)
 			(text "USB-C"
 				(at 0 18.8 0)
-				(effects (font (size 0.8 0.8)) (justify left))
+				(effects
+					(font (size 0.8 0.8))
+					(justify left)
+				)
 			)
 		)
 		(symbol "Arduino_Nano_USB-C_1_1"

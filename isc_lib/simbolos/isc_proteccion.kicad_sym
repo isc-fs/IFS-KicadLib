@@ -8,7 +8,7 @@
 	    (property "Value" "GF1A-E3/67A" (at 5.08 -3.81 0)
 	      (effects (font (size 1.524 1.524)))
 	    )
-	    (property "Footprint" "DO-214BA_VIS" (at 0 0 0)
+	    (property "Footprint" "ISC_paquetes:DO-214BA_VIS" (at 0 0 0)
 	      (effects (font (size 1.27 1.27) italic) hide)
 	    )
 	    (property "Datasheet" "https://www.vishay.com/doc?88617" (at 0 0 0)

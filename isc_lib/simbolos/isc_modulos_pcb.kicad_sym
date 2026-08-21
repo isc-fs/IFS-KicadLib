@@ -21,7 +21,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "ISC_modulos_pcb:BRK"
 				(at 0 0 0)
 				(effects
 					(font
@@ -231,7 +231,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "FGPMMOPA6H"
+			(property "Footprint" "ISC_modulos_pcb:GPS_FGPMMOPA6H"
 				(at 0 0 0)
 				(effects
 					(font
@@ -732,7 +732,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "ISC_modulos_pcb:GPS_Ultimate"
 				(at 0 0 0)
 				(effects
 					(font
@@ -958,7 +958,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "ISC_modulos_pcb:MAIN_LITE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1678,7 +1678,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "ISC_modulos_pcb:MAIN_CONTROL_UNIT"
 				(at -7.62 10.16 0)
 				(effects
 					(font
@@ -3184,7 +3184,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "ISC_modulos_pcb:SMT_B7935BB3_WFS"
 				(at 0 0 0)
 				(effects
 					(font

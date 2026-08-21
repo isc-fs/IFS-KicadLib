@@ -23,7 +23,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "3568"
+			(property "Footprint" "ISC_electromecanica:3568"
 				(at 16.51 -94.92 0)
 				(effects
 					(font
@@ -196,7 +196,7 @@
 	    (property "Value" "1571563-6" (at 20.32 7.62 0)
 	      (effects (font (size 1.524 1.524)))
 	    )
-	    (property "Footprint" "SW4_1437565-E_TEC" (at 0 0 0)
+	    (property "Footprint" "ISC_electromecanica:SW4_1437565-E_TEC" (at 0 0 0)
 	      (effects (font (size 1.27 1.27) italic) hide)
 	    )
 	    (property "Datasheet" "1571563-6" (at 0 0 0)
@@ -349,7 +349,7 @@
 	    (property "Value" "ACSC02-41CGKWA-F01" (at 31.75 5.08 0)
 	      (effects (font (size 1.27 1.27)) (justify left top))
 	    )
-	    (property "Footprint" "ACSC0241CGKWAF01" (at 31.75 -94.92 0)
+	    (property "Footprint" "ISC_electromecanica:ACSC0241CGKWAF01" (at 31.75 -94.92 0)
 	      (effects (font (size 1.27 1.27)) (justify left top) hide)
 	    )
 	    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/ACSC02-41CGKWA-F01.pdf" (at 31.75 -194.92 0)
@@ -555,7 +555,7 @@
 	    (property "Value" "150080RS75000" (at 20.32 7.62 0)
 	      (effects (font (size 1.524 1.524)))
 	    )
-	    (property "Footprint" "150080RS75000_WRE" (at 0 0 0)
+	    (property "Footprint" "ISC_electromecanica:150080RS75000_WRE" (at 0 0 0)
 	      (effects (font (size 1.27 1.27) italic) hide)
 	    )
 	    (property "Datasheet" "https://www.we-online.com/catalog/datasheet/150080RS75000.pdf" (at 0 0 0)

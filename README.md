@@ -189,17 +189,46 @@ Todos los componentes nuevos deben seguir estrictamente este formato para manten
 
 ---
 
-## 🔄 Flujo para añadir un nuevo componente
+## 🔄 Flujo de Trabajo para Añadir un Nuevo Componente (Git & PR)
 
+Para mantener la integridad de la librería y evitar conflictos en la rama principal (`main`), **nadie debe hacer commits directos a `main`**. El flujo de contribución es el siguiente:
+
+### 1. Actualizar tu copia local y crear una rama propia
+Crea una rama que incluya **tu nombre o usuario** y el componente que vas a añadir:
+```bash
+git checkout main
+git pull origin main
+git checkout -b tu_nombre/nombre_componente
+# Ejemplo: git checkout -b pablo/can-transceiver-tja1051
 ```
-1. Descarga el símbolo/huella desde UltraLibrarian o SnapEDA
-2. Coloca el símbolo en isc_lib/simbolos/isc_[categoria].kicad_sym
-3. Coloca la huella en isc_lib/huellas/isc_[categoria].pretty/
-4. Coloca el modelo 3D en isc_lib/modelos3d/[categoria]/
-5. Actualiza la ruta del modelo 3D en la huella: ${ISC_KICAD_LIB}/isc_lib/modelos3d/...
-6. Completa los campos: MPN, Datasheet, Footprint, Value
-7. Abre un PR con el nombre: "add: [MPN] - [descripción breve]"
+
+### 2. Añadir y configurar el componente
+1. **Símbolo**:
+   - Descarga o diseña el símbolo y colócalo en su archivo correspondiente: `isc_lib/simbolos/isc_[categoria].kicad_sym`.
+   - Rellena todos los campos obligatorios: `Reference`, `Value`, `Footprint` (ej: `ISC_paquetes:SOIC-8`), `Datasheet` y `MPN`.
+   - *Nota KiCad 10*: Asegúrate de que los gráficos/pines estén contenidos en una sub-unidad `(symbol "NOMBRE_1_1" ...)`.
+2. **Huella**:
+   - Coloca el archivo `.kicad_mod` en la carpeta `.pretty` adecuada: `isc_lib/huellas/isc_[categoria].pretty/`.
+3. **Modelo 3D**:
+   - Guarda el archivo `.step`/`.stp` en `isc_lib/modelos3d/[categoria]/`.
+   - En las propiedades 3D de la huella, asigna la ruta usando **estrictamente** la variable de entorno:
+     ```
+     ${ISC_KICAD_LIB}/isc_lib/modelos3d/[categoria]/nombre_modelo.step
+     ```
+
+### 3. Guardar cambios y subir tu rama
+Realiza un commit atómico y sube la rama a GitHub:
+```bash
+git add isc_lib/
+git commit -m "add: [MPN] - [Descripción breve del componente]"
+# Ejemplo: git commit -m "add: TJA1051T - Transceptor CAN High Speed SOIC-8"
+git push -u origin tu_nombre/nombre_componente
 ```
+
+### 4. Crear un Pull Request (PR)
+1. Ve al repositorio en GitHub: [IFS-KicadLib](https://github.com/isc-fs/IFS-KicadLib).
+2. Abre un **Pull Request** desde tu rama hacia la rama `main`.
+3. El **gestor/administrador del repositorio** revisará que el componente cumpla las reglas de diseño (nomenclatura, campos completos, rutas 3D relativas) y lo fusionará (*merge*) a la rama `main` para que esté disponible para todo el equipo.
 
 ---
 

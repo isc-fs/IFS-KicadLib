@@ -6,22 +6,72 @@ Repositorio central de componentes, huellas y modelos 3D para el diseño de las 
 
 ---
 
-## ⚙️ Configuración del Entorno (¡Importante!)
+## 🧠 ¿Cómo funciona la librería? (Git ➔ Tu Ordenador ➔ KiCad)
 
-Para que los modelos 3D y las rutas no se rompan al clonar este repositorio, debes configurar la siguiente variable de entorno en tu KiCad local:
+Para entender cómo se sincronizan los componentes entre todos los miembros del equipo:
+
+```
+ ┌──────────────────────────────────────────────────────────┐
+ │                  GitHub (Repositorio Remoto)             │
+ │             https://github.com/isc-fs/IFS-KicadLib       │
+ └────────────────────────────┬─────────────────────────────┘
+                              │
+                    git clone │ git pull
+                              ▼
+ ┌──────────────────────────────────────────────────────────┐
+ │               Tu Ordenador (Copia Local en Disco)        │
+ │          Ej: C:\Users\tunombre\repos\IFS-KicadLib        │
+ └────────────────────────────┬─────────────────────────────┘
+                              │
+            Variable de ruta  │ ${ISC_KICAD_LIB}
+                              ▼
+ ┌──────────────────────────────────────────────────────────┐
+ │                         KiCad                            │
+ │  Lee símbolos (.kicad_sym), huellas (.pretty) y 3D       │
+ └──────────────────────────────────────────────────────────┘
+```
+
+1. **GitHub (Nube):** Es el repositorio central donde vive la versión oficial (`main`) de todas las huellas, símbolos y modelos 3D del equipo.
+2. **Tu Ordenador (Local):** **Debes clonar este repositorio** en tu ordenador para tener los archivos físicamente en tu disco.
+3. **KiCad:** No se conecta directamente a internet para leer componentes; lee la carpeta local de tu ordenador a través de la variable de entorno **`ISC_KICAD_LIB`**.
+4. **Sincronización:** Cada vez que otro miembro añade un componente y se aprueba en `main`, solo necesitas hacer `git pull` en tu carpeta local y KiCad lo cargará automáticamente en tus diseños.
+
+---
+
+## ⚙️ Guía de Instalación y Configuración Inicial
+
+Sigue estos pasos la primera vez que vayas a usar la librería en tu ordenador:
+
+### Paso 0: Clonar el repositorio en tu ordenador
+Abre tu terminal (Git Bash, PowerShell o Terminal) en la carpeta donde guardes tus proyectos y clona el repositorio:
+```bash
+git clone https://github.com/isc-fs/IFS-KicadLib.git
+```
+> 💡 *Anota la ruta absoluta donde se ha guardado la carpeta (por ejemplo: `C:\Users\tunombre\repos\IFS-KicadLib` o `/home/tunombre/repos/IFS-KicadLib`).*
+
+---
+
+### Paso 1: Configurar la variable de entorno en KiCad
+Para que KiCad encuentre las huellas y los modelos 3D independientemente de qué ordenador uses:
 
 1. Abre KiCad → **Preferencias → Configurar rutas...**
-2. Crea una variable llamada **`ISC_KICAD_LIB`**
-3. Asigna como valor la ruta absoluta donde has clonado esta carpeta en tu ordenador.
-   - Ejemplo Windows: `C:\Users\tunombre\repos\IFS-KicadLib`
-   - Ejemplo Linux/macOS: `/home/tunombre/repos/IFS-KicadLib`
+2. Pulsa en el botón **"+"** para añadir una variable.
+3. En **Nombre**, escribe exactamente: **`ISC_KICAD_LIB`**
+4. En **Ruta**, pon la ruta absoluta donde clonaste el repositorio en el Paso 0.
+   - *Ejemplo Windows:* `C:\Users\tunombre\repos\IFS-KicadLib`
+   - *Ejemplo Linux/macOS:* `/home/tunombre/repos/IFS-KicadLib`
+5. Pulsa **Aceptar**.
 
-### Añadir las librerías a KiCad
+---
 
-#### Símbolos
-Abre KiCad → **Preferencias → Gestionar librerías de símbolos** → pestaña **"Global"** → botón **"+"** y añade los `.kicad_sym` de `${ISC_KICAD_LIB}/isc_lib/simbolos/`.
+### Paso 2: Añadir las librerías a KiCad
 
-| Nickname | Ruta |
+#### A) Símbolos esquemáticos
+1. En KiCad, ve a **Preferencias → Gestionar librerías de símbolos...**
+2. Ve a la pestaña **"Global"** y pulsa el botón **"+"** (Añadir librería existente).
+3. Añade los archivos `.kicad_sym` de la carpeta `${ISC_KICAD_LIB}/isc_lib/simbolos/`:
+
+| Nickname | Ruta del archivo |
 |---|---|
 | `ISC_conectores` | `${ISC_KICAD_LIB}/isc_lib/simbolos/isc_conectores.kicad_sym` |
 | `ISC_ic_logica` | `${ISC_KICAD_LIB}/isc_lib/simbolos/isc_ic_logica.kicad_sym` |
@@ -32,10 +82,12 @@ Abre KiCad → **Preferencias → Gestionar librerías de símbolos** → pesta�
 | `ISC_mecanica` | `${ISC_KICAD_LIB}/isc_lib/simbolos/isc_mecanica.kicad_sym` |
 | `ISC_modulos_pcb` | `${ISC_KICAD_LIB}/isc_lib/simbolos/isc_modulos_pcb.kicad_sym` |
 
-#### Huellas
-Abre KiCad → **Preferencias → Gestionar librerías de huellas** → pestaña **"Global"** → botón **"+"** y añade los directorios `.pretty` de `${ISC_KICAD_LIB}/isc_lib/huellas/`.
+#### B) Huellas de PCB (Footprints)
+1. En KiCad, ve a **Preferencias → Gestionar librerías de huellas...**
+2. Ve a la pestaña **"Global"** y pulsa el botón **"+"** (Añadir librería existente).
+3. Añade las carpetas `.pretty` de `${ISC_KICAD_LIB}/isc_lib/huellas/`:
 
-| Nickname | Ruta |
+| Nickname | Ruta de la carpeta |
 |---|---|
 | `ISC_conectores` | `${ISC_KICAD_LIB}/isc_lib/huellas/isc_conectores.pretty` |
 | `ISC_mecanica` | `${ISC_KICAD_LIB}/isc_lib/huellas/isc_mecanica.pretty` |
@@ -43,6 +95,16 @@ Abre KiCad → **Preferencias → Gestionar librerías de huellas** → pestaña
 | `ISC_sensores` | `${ISC_KICAD_LIB}/isc_lib/huellas/isc_sensores.pretty` |
 | `ISC_electromecanica` | `${ISC_KICAD_LIB}/isc_lib/huellas/isc_electromecanica.pretty` |
 | `ISC_modulos_pcb` | `${ISC_KICAD_LIB}/isc_lib/huellas/isc_modulos_pcb.pretty` |
+
+---
+
+### Paso 3: Mantener la librería actualizada
+Cada vez que vayas a diseñar o trabajar en un esquema/PCB, asegúrate de tener los últimos componentes aprobados por el equipo ejecutando en la carpeta del repositorio:
+```bash
+git checkout main
+git pull origin main
+```
+KiCad actualizará los componentes disponibles de forma automática.
 
 ---
 

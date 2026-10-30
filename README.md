@@ -79,6 +79,10 @@ Para que KiCad encuentre las huellas y los modelos 3D independientemente de qué
 | `ISC_sensores` | `${ISC_KICAD_LIB}/isc_lib/simbolos/isc_sensores.kicad_sym` |
 | `ISC_electromecanica` | `${ISC_KICAD_LIB}/isc_lib/simbolos/isc_electromecanica.kicad_sym` |
 | `ISC_proteccion` | `${ISC_KICAD_LIB}/isc_lib/simbolos/isc_proteccion.kicad_sym` |
+| `ISC_inductores` | `${ISC_KICAD_LIB}/isc_lib/simbolos/isc_inductores.kicad_sym` |
+| `ISC_resistencias` | `${ISC_KICAD_LIB}/isc_lib/simbolos/isc_resistencias.kicad_sym` |
+| `ISC_condensadores` | `${ISC_KICAD_LIB}/isc_lib/simbolos/isc_condensadores.kicad_sym` |
+| `ISC_cristales` | `${ISC_KICAD_LIB}/isc_lib/simbolos/isc_cristales.kicad_sym` |
 | `ISC_mecanica` | `${ISC_KICAD_LIB}/isc_lib/simbolos/isc_mecanica.kicad_sym` |
 | `ISC_modulos_pcb` | `${ISC_KICAD_LIB}/isc_lib/simbolos/isc_modulos_pcb.kicad_sym` |
 
@@ -94,6 +98,7 @@ Para que KiCad encuentre las huellas y los modelos 3D independientemente de qué
 | `ISC_paquetes` | `${ISC_KICAD_LIB}/isc_lib/huellas/isc_paquetes.pretty` |
 | `ISC_sensores` | `${ISC_KICAD_LIB}/isc_lib/huellas/isc_sensores.pretty` |
 | `ISC_electromecanica` | `${ISC_KICAD_LIB}/isc_lib/huellas/isc_electromecanica.pretty` |
+| `ISC_inductores` | `${ISC_KICAD_LIB}/isc_lib/huellas/isc_inductores.pretty` |
 | `ISC_modulos_pcb` | `${ISC_KICAD_LIB}/isc_lib/huellas/isc_modulos_pcb.pretty` |
 
 ---
@@ -128,14 +133,16 @@ isc_lib/
 │
 ├── huellas/                         ← Huellas KiCad (.pretty)
 │   ├── isc_conectores.pretty/
+│   ├── isc_inductores.pretty/
 │   ├── isc_mecanica.pretty/
-│   ├── isc_paquetes.pretty/         ← Encapsulados genéricos (SOT, SOIC...)
+│   ├── isc_paquetes.pretty/         ← Encapsulados genéricos (SOT, SOIC, QFP...)
 │   ├── isc_sensores.pretty/
 │   ├── isc_electromecanica.pretty/
 │   └── isc_modulos_pcb.pretty/      ← Huellas de PCBs externas
 │
 └── modelos3d/                       ← Modelos 3D (.step / .stp / .wrl)
     ├── conectores/
+    ├── inductores/
     ├── mecanica/
     ├── paquetes/
     ├── sensores/
@@ -199,6 +206,8 @@ Todos los componentes nuevos deben seguir estrictamente este formato para manten
 | `CONN_TE_1-776087-1` | 1-776087-1 | AMP | — | `1-776087-1.stp` |
 | `CONN_Molex_43045-1200` | 43045-1200 | SL | 12P | — |
 | `CONN_XT60PW-M` | XT60PW-M | Amass XT60 | 2P power | `XT60PW-M.STEP` |
+| `1720650004` | 1720650004 | Mega-Fit | 4P macho vertical (2x2) | `Molex_Mega-Fit_76829-0004.step` |
+| `CONN_TE_776163-1` | 776163-1 | AMPSEAL | 35P macho acodado | `TE_AMPSEAL_776163-1.step` |
 
 ### ICs de Lógica y Regulación (`isc_ic_logica`)
 
@@ -211,6 +220,9 @@ Todos los componentes nuevos deben seguir estrictamente este formato para manten
 | `MCP1755_3V3` | MCP1755ST-3302E/DB | LDO 3.3V | SOT-23-5 |
 | `MC74AC74DG` | MC74AC74DG | D flip-flop dual | SOIC-14 |
 | `NE555PW` | NE555PW | Timer 555 | TSSOP-8 |
+| `STM32L431CBT6` | STM32L431CBT6 | Microcontrolador ARM Cortex-M4 80MHz | LQFP-48 |
+| `PTCAN3403DRQ1` | PTCAN3403DRQ1 | Transceptor CAN FD con Sleep/Wake | SOIC-8 |
+| `OKI-78SR-3.3` | OKI-78SR-3.3/1.5-W36-C | Regulador switching step-down 3.3V 1.5A | SIP-3 |
 
 ### ICs de Potencia (`isc_ic_potencia`)
 
@@ -222,6 +234,9 @@ Todos los componentes nuevos deben seguir estrictamente este formato para manten
 | `IRLZ44N` | IRLZ44NSTRLPBF | MOSFET N logic-level | TO-263 |
 | `IPN80R3K3P7` | IPN80R3K3P7ATMA1 | MOSFET N 800V | TO-263 |
 | `DMN6075SQ` | DMN6075SQ-7 | MOSFET N dual | SOT-363 |
+| `LM5145RGYR` | LM5145RGYR | Controlador sincrónico Buck síncrono 75V | VQFN-20 (RGY0020B) |
+| `TPSM63606EXTRDLR` | TPSM63606EXTRDLR | Módulo convertidor integrado Buck 36V 6A | QFN-20 (RDL0020A) |
+| `CSD18534Q5A` | CSD18534Q5A | MOSFET de potencia canal N 60V 50A | PowerPAK SO-8 |
 
 ### Sensores (`isc_sensores`)
 
@@ -231,6 +246,7 @@ Todos los componentes nuevos deben seguir estrictamente este formato para manten
 | `BNO085` | BNO085 | IMU 9-DOF fusión | LGA-28 |
 | `MLX90640` | MLX90640ESF-BAB-000-SP | IR array 32×24px | TO-39 |
 | `CAS-220TA1` | CAS-220TA1 | Sensor de corriente | — |
+| `INA260` | INA260AIPWR | Monitor de corriente/voltaje I2C shunt 15A 36V | TSSOP-16 |
 
 ### Electromecánica (`isc_electromecanica`)
 
@@ -245,9 +261,16 @@ Todos los componentes nuevos deben seguir estrictamente este formato para manten
 
 ### Protección (`isc_proteccion`)
 
-| Símbolo | MPN | Descripción |
-|---|---|---|
-| `DIODE_GF1A` | GF1A-E3/67A | Diodo rectificador 1A |
+| Símbolo | MPN | Descripción | Encapsulado |
+|---|---|---|---|
+| `DIODE_GF1A` | GF1A-E3/67A | Diodo rectificador 1A | SMA |
+| `SMCJ33A` | SMCJ33A | Diodo TVS unidireccional 33V 1500W | SMC (DO-214AB) |
+
+### Inductores (`isc_inductores`)
+
+| Símbolo | MPN | Descripción | Encapsulado / Huella | Modelo 3D |
+|---|---|---|---|---|
+| `L_HCI-1050` | 7443552100 | Inductor alta corriente apantallado WE-HCI 1050 | `L_Wuerth_WE-HCI-1050` | `L_Wuerth_WE-HCI-1050.step` |
 
 ---
 
@@ -298,6 +321,7 @@ git push -u origin tu_nombre/nombre_componente
 
 | Versión | Fecha | Descripción |
 |---|---|---|
+| v1.1 | 2026-10 | Añadidos componentes para Smart Fuses: STM32L431CBT6 (LQFP-48), INA260, LM5145, TPSM63606, CSD18534, PTCAN3403, Molex Mega-Fit 4P, TE AMPSEAL 35P, TVS SMCJ33A e inductor Würth WE-HCI |
 | v1.0 | 2026-08 | Primera release: componentes extraídos de IFS08, IFS05 y proyectos existentes |
 
 ---

@@ -200,9 +200,9 @@ Todos los componentes nuevos deben seguir estrictamente este formato para manten
 | `CONN_Molex_MF_2x04_M` | 430450800 | Micro-Fit 3.0 | 8P macho | `430450800.stp` |
 | `CONN_Molex_MF_1x03_F` | 436500300 | Micro-Fit 3.0 | 3P hembra | `436500301.stp` |
 | `CONN_Molex_MF_1x02_F` | 436500200 | Micro-Fit 3.0 | 2P hembra | `436500200.stp` |
-| `CONN_TE_770669-1` | 770669-1 | AMP | — | `c-770669-1-p-3d.stp` |
+| `CONN_TE_776267-1` | 776267-1 | AMPSEAL | 14P macho acodado | `TE_776267-1.stp` |
+| `CONN_TE_770669-1` | 770669-1 | AMPSEAL | 23P macho acodado | `TE_770669-1.stp` |
 | `CONN_TE_282837-2` | 282837-2 | AMP | — | `c-282837-2-g2-3d.stp` |
-| `CONN_TE_776267-1` | 776267-1 | AMP 14P | 14P | `776267-1.stp` |
 | `CONN_TE_1-776087-1` | 1-776087-1 | AMP | — | `1-776087-1.stp` |
 | `CONN_Molex_43045-1200` | 43045-1200 | SL | 12P | — |
 | `CONN_XT60PW-M` | XT60PW-M | Amass XT60 | 2P power | `XT60PW-M.STEP` |

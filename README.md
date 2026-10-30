@@ -206,7 +206,7 @@ Todos los componentes nuevos deben seguir estrictamente este formato para manten
 | `CONN_TE_1-776087-1` | 1-776087-1 | AMP | — | `1-776087-1.stp` |
 | `CONN_Molex_43045-1200` | 43045-1200 | SL | 12P | — |
 | `CONN_XT60PW-M` | XT60PW-M | Amass XT60 | 2P power | `XT60PW-M.STEP` |
-| `1720650004` | 1720650004 | Mega-Fit | 4P macho vertical (2x2) | `Molex_Mega-Fit_76829-0004.step` |
+| `76825-0004` | 76825-0004 | Mega-Fit | 4P macho acodado 90° horizontal (2x2) | `Molex_Mega-Fit_76825-0004.step` |
 | `CONN_TE_776163-1` | 776163-1 | AMPSEAL | 35P macho acodado | `TE_AMPSEAL_776163-1.step` |
 
 ### ICs de Lógica y Regulación (`isc_ic_logica`)

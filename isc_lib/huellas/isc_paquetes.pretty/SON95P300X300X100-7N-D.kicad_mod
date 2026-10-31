@@ -28,7 +28,7 @@
   (pad 5 smd rect (at 1.5 0 90) (size 0.4 0.8) (layers F.Cu F.Paste F.Mask))
   (pad 6 smd rect (at 1.5 -0.95 90) (size 0.4 0.8) (layers F.Cu F.Paste F.Mask))
   (pad 7 smd rect (at 0 0 0) (size 1.75 2.5) (layers F.Cu F.Paste F.Mask))
-  (model LD39200PU33R.stp
+  (model "${ISC_KICAD_LIB}/isc_lib/modelos3d/paquetes/LD39200PU33R.stp"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

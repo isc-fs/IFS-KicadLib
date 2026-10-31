@@ -41,7 +41,7 @@
   (pad 12 thru_hole circle (at -15 -3) (size 1.52 1.52) (drill 1.02) (layers *.Cu *.Mask))
   (pad 13 np_thru_hole circle (at -2.16 4.32) (size 3 3) (drill 3) (layers *.Cu *.Mask))
   (pad 14 np_thru_hole circle (at -12.84 4.32) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-  (model 43045-1200.stp
+  (model "${ISC_KICAD_LIB}/isc_lib/modelos3d/conectores/Molex_430451200.stp"
     (at (xyz -0.29606299137506 -0.15590551331287 0.14999999774723))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))

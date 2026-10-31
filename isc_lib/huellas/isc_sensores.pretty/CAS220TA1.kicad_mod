@@ -35,7 +35,7 @@
   (pad 4 smd rect (at -1.750 -1.85 0) (size 1.000 1.600) (layers F.Cu F.Paste F.Mask))
   (pad 5 smd rect (at 0.000 -1.85 0) (size 1.000 1.600) (layers F.Cu F.Paste F.Mask))
   (pad 6 smd rect (at 1.750 -1.85 0) (size 1.000 1.600) (layers F.Cu F.Paste F.Mask))
-  (model CAS-220TA1.stp
+  (model "${ISC_KICAD_LIB}/isc_lib/modelos3d/sensores/CAS-220TA1.stp"
     (at (xyz -0.0039370079326817 0 0.098425196850394))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))

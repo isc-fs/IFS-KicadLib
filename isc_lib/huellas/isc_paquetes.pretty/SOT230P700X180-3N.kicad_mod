@@ -234,7 +234,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "f5bf722f-8db3-482f-8d00-fc47b1822bbf")
 	)
-	(model "IPN80R3K3P7ATMA1.stp"
+	(model "${ISC_KICAD_LIB}/isc_lib/modelos3d/paquetes/SOT-223.step"
 		(offset
 			(xyz 0 0 0)
 		)

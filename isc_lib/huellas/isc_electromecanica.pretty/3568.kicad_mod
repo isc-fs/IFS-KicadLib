@@ -26,7 +26,7 @@
   (pad 2 thru_hole circle (at 0.000 -3.4) (size 2.400 2.400) (drill 1.6) (layers *.Cu *.Mask))
   (pad 3 thru_hole circle (at 9.920 -0) (size 2.400 2.400) (drill 1.6) (layers *.Cu *.Mask))
   (pad 4 thru_hole circle (at 9.920 -3.4) (size 2.400 2.400) (drill 1.6) (layers *.Cu *.Mask))
-  (model 3568.stp
+  (model "${ISC_KICAD_LIB}/isc_lib/modelos3d/mecanica/Littelfuse_3568_FuseHolder.stp"
     (at (xyz 0.19527559205303 0.066929135735579 0.15433071166512))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))
